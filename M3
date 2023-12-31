@@ -1,8 +1,22 @@
 def iAmMethod3Ua():
-	abc = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
-	pkgs = random.choice(['com.facebook.katana','com.facebook.mlite','com.facebook.lite','com.facebook.adsmanager','com.facebook.liteh'])
-	build = random.choice(abc)+random.choice(abc)+random.choice(abc)
-	FBBV = str(random.randint(111111111,999999999))
-	FBCR = random.choice(["Jazz","Zong","Mobilink","Ufone"])
-	ua = random.choice(["[FBAN/FB4A;FBAV/61.0.0.15.69;FBBV/20748118;FBDM/{density=2.1,width=1980,height=680};FBLC/en_US;FBRV/0;FBCR/Docomo;FBMF/Samsung;FBBD/Samsung;FBPN/com.facebook.katana;FBDV/SM-X503B;FBSV/9;FBOP/1;FBCA/x32:armeabi-v7a;]",])
-	return ua
+    samsung_models = [
+        "SM-A307FN|A307FNXXS4CWH2",
+        "SM-G570F|G570FXXS4CTJA",
+        "SM-G988U|G988USQS8HWK1",
+        "SM-A115A|A115AUCS7CWB1",
+        "SM-J700M|J700MUBU2BSA1",
+        "SM-A307FN|A307FNXXS4CWH1",
+        "SM-A715F|A715FXXS5BUI1",
+        "SM-J320F|I9500XXUEMJ3",
+        "SM-M325F|M325FXXU1BUH1",
+        "SM-J320F|J320FXXU0ARL2",
+        "SM-F916U|F916USQS2JWE4",
+    ]
+    model_, build = random.choice(samsung_models).rsplit('|')
+    os_v = random.randint(4, 13)
+    FBCR = random.choice(["Jazz","Zong","Mobilink","Ufone","Telenor","Warid","Djuice","Vodafone"])
+    a = "[FBAN/FB4A;FBAV/"+str(random.randint(49,66))+'.0.0.0.'+str(random.randrange(20,49)) +";FBBV/"+str(random.randint(1111111,7777777))
+    fbav = f"{os_v}.0.0.{random.randint(0, 3)}.{random.randint(11, 99)}"
+    b = ('[FBAN/FB4A;FBAV/'+str(fbav)+';FBPN/com.facebook.katana;FBLC/en_GB;FBBV/'+str(random.randint(1111111,9999999))+';FBCR/'+str(FBCR)+';FBMF/samsung;FBBD/samsung;FBDV/'+str(model_)+'/7.2.9;FBCA/armeabi-v7a:armeabi;FBDM/{density=2.0,width=810,height=1704};FB_FW/1;]')
+    ua = a+b
+    return ua
