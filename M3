@@ -1,1 +1,8 @@
-
+def iAmMethod3Ua():
+	abc = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
+	pkgs = random.choice(['com.facebook.katana','com.facebook.mlite','com.facebook.lite','com.facebook.adsmanager','com.facebook.liteh'])
+	build = random.choice(abc)+random.choice(abc)+random.choice(abc)
+	FBBV = str(random.randint(111111111,999999999))
+	FBCR = random.choice(["Jazz","Zong","Mobilink","Ufone"])
+	ua = random.choice(["[FBAN/FB4A;FBAV/61.0.0.15.69;FBBV/20748118;FBDM/{density=2.1,width=1980,height=680};FBLC/en_US;FBRV/0;FBCR/Docomo;FBMF/Samsung;FBBD/Samsung;FBPN/com.facebook.katana;FBDV/SM-X503B;FBSV/9;FBOP/1;FBCA/x32:armeabi-v7a;]",])
+	return ua￼Enter
