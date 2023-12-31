@@ -5,4 +5,4 @@ def iAmMethod3Ua():
 	FBBV = str(random.randint(111111111,999999999))
 	FBCR = random.choice(["Jazz","Zong","Mobilink","Ufone"])
 	ua = random.choice(["[FBAN/FB4A;FBAV/61.0.0.15.69;FBBV/20748118;FBDM/{density=2.1,width=1980,height=680};FBLC/en_US;FBRV/0;FBCR/Docomo;FBMF/Samsung;FBBD/Samsung;FBPN/com.facebook.katana;FBDV/SM-X503B;FBSV/9;FBOP/1;FBCA/x32:armeabi-v7a;]",])
-	return ua￼Enter
+	return ua
