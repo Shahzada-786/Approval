@@ -1,4 +1,4 @@
-def def iAmMethod2Ua():
+def iAmMethod2Ua():
 	a = "[FBAN/FB4A;FBAV/"+str(random.randint(49,66))+'.0.0.'+str(random.randrange(20,49))+str(random.randint(11,99)) +";FBBV/"+str(random.randint(11111111,77777777))
 	b = ";[FBAN/FB4A;FBAV/269.0.0.50;FBBV/375744564;FBDM/{density=2.335,width=720,height=1520};FBLC/en_PH;FBCR/GOMO;FBMF/T-Mobile;FBBD/T-Mobile;FBPN/com.facebook.katana;FBDV/T790W;FBSV/9.0.2;FBOP/1;FBCA/armeabi-v7a:armeabi;]"
 	ua = a+b
