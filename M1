@@ -1,18 +1,22 @@
 def iAmMethod1Ua():
-        samsung_models = [
-            "SM-A307FN|A307FNXXS4CWH2",
-            "SM-G570F|G570FXXS4CTJA",
-            "SM-G988U|G988USQS8HWK1",
-            "SM-A750F|A750FXXU5CVI1",
-            "SM-J730FM|J730FMXXU7CUE2",
-            "SM-N920C|N920CXXU5CVG2",
-            "SM-A115A|A115AUCS7CWB1",
-            "SM-G965F|G965FXXUHFVG4",
-            "SM-A305F|A305FDDS6CWA3",
-            "SM-J700M|J700MUBU2BSA1",
-            "SM-A307FN|A307FNXXS4CWH1",]
-        model_,build = random.choice(samsung_models).rsplit('|')
-        os_v = random.randint(4, 13)
-        fbav = f"{os_v}.0.{random.randint(111, 999)}.{random.randint(111, 999)}"
-        ua = ('[FBAN/Orca-Android;FBAV/'+str(fbav)+';FBPN/com.facebook.orca;FBLC/bn_BD;FBBV/'+str(random.randint(111111111,999999999))+';FBCR/null;FBMF/samsung;FBBD/samsung;FBDV/'+str(model_)+'/7.2.9;FBCA/armeabi-v7a:armeabi;FBDM/{density=2.0,width=810,height=1704};FB_FW/1;]')
-        return ua
+    samsung_models = [
+        "SM-A307FN|A307FNXXS4CWH2",
+        "SM-G570F|G570FXXS4CTJA",
+        "SM-G988U|G988USQS8HWK1",
+        "SM-A115A|A115AUCS7CWB1",
+        "SM-J700M|J700MUBU2BSA1",
+        "SM-A307FN|A307FNXXS4CWH1",
+        "SM-A715F|A715FXXS5BUI1",
+        "SM-J320F|I9500XXUEMJ3",
+        "SM-M325F|M325FXXU1BUH1",
+        "SM-J320F|J320FXXU0ARL2",
+        "SM-F916U|F916USQS2JWE4",
+    ]
+    model_, build = random.choice(samsung_models).rsplit('|')
+    os_v = random.randint(4, 443)
+    FBCR = random.choice(["Jazz","Zong","Mobilink","Ufone","Telenor","Warid","Djuice","Vodafone"])
+    a = "[FBAN/FB4A;FBAV/"+str(random.randint(49,66))+'.0.0.0.'+str(random.randrange(20,49)) +";FBBV/"+str(random.randint(1111111,7777777))
+    fbav = f"{os_v}.0.0.{random.randint(0, 3)}.{random.randint(11, 99)}"
+    b = ('[FBAN/FB4A;FBAV/'+str(fbav)+';FBPN/com.facebook.katana;FBLC/bn_BD;FBBV/'+str(random.randint(1111111,9999999))+';FBCR/'+str(FBCR)+';FBMF/samsung;FBBD/samsung;FBDV/'+str(model_)+'/7.2.9;FBCA/armeabi-v7a:armeabi;FBDM/{density=2.0,width=810,height=1704};FB_FW/1;]')
+    ua = a+b
+    return ua
