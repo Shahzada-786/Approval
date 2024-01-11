@@ -1,4 +1,4 @@
-def iAmMethod1Ua():
+def iAmMethod3Ua():
 	abc = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
 	pkgs = random.choice(['com.facebook.katana','com.facebook.mlite','com.facebook.lite','com.facebook.adsmanager','com.facebook.liteh'])
 	build = random.choice(abc)+random.choice(abc)+random.choice(abc)
