@@ -15,8 +15,8 @@ def iAmMethod1Ua():
     model_, build = random.choice(samsung_models).rsplit('|')
     os_v = random.randint(4, 443)
     FBCR = random.choice(["Jazz","Zong","Mobilink","Ufone","Telenor","Warid","Djuice","Vodafone"])
-    a = "[FBAN/FB4A;FBAV/"+str(random.randint(49,66))+'.0.0.0.'+str(random.randrange(20,49)) +";FBBV/"+str(random.randint(1111111,7777777))
+    a = "[FBAN/FB4A;FBAV/"+str(random.randint(4,446))+'.0.0.0.'+str(random.randrange(20,49)) +";FBBV/"+str(random.randint(1111111,7777777))
     fbav = f"{os_v}.0.0.{random.randint(0, 3)}.{random.randint(11, 99)}"
-    b = ('[FBAN/FB4A;FBAV/'+str(fbav)+';FBPN/com.facebook.katana;FBLC/bn_BD;FBBV/'+str(random.randint(1111111,9999999))+';FBCR/'+str(FBCR)+';FBMF/samsung;FBBD/samsung;FBDV/'+str(model_)+'/7.2.9;FBCA/armeabi-v7a:armeabi;FBDM/{density=2.0,width=810,height=1704};FB_FW/1;]')
+    b = ('[FBAN/FB4A;FBAV/'+str(fbav)+';FBPN/com.facebook.katana;FBLC/en_US;FBBV/'+str(random.randint(1111111,9999999))+';FBCR/'+str(FBCR)+';FBMF/samsung;FBBD/samsung;FBDV/'+str(model_)+'/7.2.9;FBCA/armeabi-v7a:armeabi;FBDM/{density=2.0,width=810,height=1704};FB_FW/1;]')
     ua = a+b
     return ua
